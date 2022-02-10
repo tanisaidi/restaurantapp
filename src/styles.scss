@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  // padding-left: 10px;
+  // padding-right: 5px;
+}
+body,html {
+
+    }
+    body {
+
+
+      background-image: url("./assets/—Pngtree—hand\ drawn\ style\ of\ foods_5315629.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      height: 100vh;
+      z-index: -5;
+   }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

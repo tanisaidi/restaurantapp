@@ -1,0 +1,118 @@
+.main-content{
+	width: 70%;
+	border-radius: 20px;
+height: 50%;
+	// margin: 5em auto;
+	display: flex;
+}
+//left side of logo template, with business logo
+.company__info{
+  border: solid rgba(204, 172, 145, 0.342) 0.5px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	background: #ffffff;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+}
+.fa-android{
+	font-size:3em;
+}
+@media screen and (max-width: 640px) {
+	.main-content{width: 90%;}
+	.company__info{
+		display: none;
+	}
+	.login_form{
+
+    padding-top: 15px;
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+}
+@media screen and (min-width: 642px) and (max-width:900px){
+	.main-content{width: 70%;}
+}
+.row > h2{
+  padding-top: 35px;
+	color:#000000;
+}
+.login_form{
+  background-color: rgba(26, 22, 15, 0.87);
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+  border: solid rgba(95, 64, 36, 0.342) 0.5px;
+  box-shadow: rgba(0, 0, 0, 0.274) 0px 19px 38px, rgba(0, 0, 0, 0.493) 0px 15px 12px;
+}
+form{
+padding: 20px 15px;
+
+}
+.form__input{
+	width: 100%;
+	border-radius: 10px;
+	border-bottom: 1px solid rgb(0, 0, 0);
+	padding: 1em .5em .5em;
+
+	outline:none;
+margin-bottom:60px;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #ffc919;
+
+}
+.btn{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 10px;
+	color:#f5cb0e;
+	font-weight: 600;
+	background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+	border: 1px solid #503a0b;
+	margin-top:10px;
+  margin-left: 35px;
+
+}
+.btn:hover, .btn:focus{
+	background-color: #eecb04;
+	color:rgb(0, 0, 0);
+}
+//div covering page, blur effect and color animation
+#wholepage{
+  backdrop-filter: blur(6px);
+  background: linear-gradient(-45deg, #ffffff, #f8e9beab,#f3e1ae9d,#6349048c  ,#1f1701e5);
+  animation: gradient 5s ease infinite;
+  background-size: 400% 400%;
+height: 100%;
+position: absolute;
+// margin-top: 20px;
+// padding-top: 100px;
+// padding-bottom: 130px;
+padding-left: 370px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#maincontent{
+margin-top: 150px;
+  // backdrop-filter: blur(5px);
+  // border: solid 0.8px rgba(255, 255, 255, 0.185);
+padding: 10px 20px;
+height: 50%;
+}
+#leftside{
+  padding-top: 20px;
+}
